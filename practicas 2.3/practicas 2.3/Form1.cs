@@ -20,14 +20,13 @@ namespace practicas_2._3
         private void button1_Click(object sender, EventArgs e)
         {
             string textoTelegrama;
-            char tipoTelegrama = ' ';
+            char tipoTelegrama = 'o';
             int numPalabras = 0;
             double coste = 0;
 
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
-            textoTelegrama = textoTelegrama.ToLower();
-
+            string[] palabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             // telegrama urgente?
             if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
@@ -35,9 +34,7 @@ namespace practicas_2._3
                 tipoTelegrama = 'o';
 
             //Obtengo el número de palabras que forma el telegrama
-            string[] palabras = textoTelegrama.Split(' ');
             numPalabras = palabras.Length;
-
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
             {
