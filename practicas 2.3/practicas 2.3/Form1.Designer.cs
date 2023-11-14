@@ -31,16 +31,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.rbOrdinario = new System.Windows.Forms.RadioButton();
+            this.rbUrgente = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(182, 139);
+            this.button1.Location = new System.Drawing.Point(166, 135);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 63);
+            this.button1.Size = new System.Drawing.Size(161, 67);
             this.button1.TabIndex = 0;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
@@ -63,16 +64,6 @@
             this.txtTelegrama.Size = new System.Drawing.Size(315, 82);
             this.txtTelegrama.TabIndex = 2;
             // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(52, 139);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(70, 17);
-            this.cbUrgente.TabIndex = 3;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -89,14 +80,37 @@
             this.txtPrecio.Size = new System.Drawing.Size(93, 20);
             this.txtPrecio.TabIndex = 5;
             // 
+            // rbOrdinario
+            // 
+            this.rbOrdinario.AutoSize = true;
+            this.rbOrdinario.Location = new System.Drawing.Point(12, 135);
+            this.rbOrdinario.Name = "rbOrdinario";
+            this.rbOrdinario.Size = new System.Drawing.Size(65, 17);
+            this.rbOrdinario.TabIndex = 6;
+            this.rbOrdinario.TabStop = true;
+            this.rbOrdinario.Text = "ordinario";
+            this.rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            this.rbUrgente.AutoSize = true;
+            this.rbUrgente.Location = new System.Drawing.Point(84, 135);
+            this.rbUrgente.Name = "rbUrgente";
+            this.rbUrgente.Size = new System.Drawing.Size(61, 17);
+            this.rbUrgente.TabIndex = 7;
+            this.rbUrgente.TabStop = true;
+            this.rbUrgente.Text = "urgente";
+            this.rbUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 242);
+            this.ClientSize = new System.Drawing.Size(360, 230);
+            this.Controls.Add(this.rbUrgente);
+            this.Controls.Add(this.rbOrdinario);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -112,9 +126,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTelegrama;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.RadioButton rbOrdinario;
+        private System.Windows.Forms.RadioButton rbUrgente;
     }
 }
 
